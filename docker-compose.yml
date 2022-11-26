@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 15672:15672
+    mem_limit: 500m
+  consumer:
+    build: ./consumer
+    depends_on: 
+      - rabbitmq
+    restart: always
+    mem_limit: 500m
