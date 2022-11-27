@@ -1,7 +1,7 @@
-CREATE TABLE table1 (
+CREATE TABLE IF NOT EXISTS  table1 (
     message VARCHAR NOT NULL
 );
 
-CREATE TABLE table2 (
+CREATE TABLE IF NOT EXISTS  table2 (
     message VARCHAR NOT NULL
 );
