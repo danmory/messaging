@@ -25,6 +25,8 @@ services:
     build: ./consumer
     restart: always
     mem_limit: 500m
+    deploy:
+      replicas: 3
   producer:
     depends_on: 
       - rabbitmq
